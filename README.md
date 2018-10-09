@@ -4,6 +4,8 @@ A Clojure library and standalone server for [live-reload](http://livereload.com/
 
 ## Usage
 
+[com.benrady/clj-live-reload "0.1.0"]
+
 clj-live-reload can be run as a standalone live-reload socket server, or embedded in another process.
 
 ## Client
