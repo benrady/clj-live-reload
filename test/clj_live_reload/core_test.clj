@@ -10,6 +10,8 @@
 (deftest clj-live-reload
   (with-redefs [jetty/send! (fn [_ msg] (reset! sent-string msg))]
 
+    (reset! sent-string nil)
+
     (testing "ignores a non-hello message"
       ((ws-handler :on-text) :ws "{}")
       (is (nil? @sent-string)))
