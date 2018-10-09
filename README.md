@@ -1,6 +1,6 @@
 # clj-live-reload
 
-A Clojure library and standalone server for [live-reload](http://livereload.com/)
+An embedded Clojure server for [live-reload](http://livereload.com/)
 
 ## Installation (via Clojars.org)
 
@@ -14,7 +14,7 @@ clj-live-reload can be easily embedded in another process by calling:
 => (clj-live-reload.core/start-server "path/to/files")
 ```
 
-This will start an http server on port 35729 (the default live-reload port) and watch the given file path (and subdirectories) for file changes.
+This will start an http server on port 35729 (the default live-reload port) and watch the given file path (and subdirectories) for file changes. This call will block, so you may want to wrap it in a `(future)`.
 
 ## Client
 
