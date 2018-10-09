@@ -4,7 +4,7 @@ An embedded Clojure server for [live-reload](http://livereload.com/)
 
 ## Installation (via Clojars.org)
 
-```[com.benrady/clj-live-reload "0.1.0"]```
+```[clj-live-reload "0.1.0"]```
 
 ## Embedding
 
